@@ -31,6 +31,7 @@ namespace SearchBot
                     ApiKey = "AIzaSyCyNBVdMBMa4SR9UNDznWYLbxM1E-qCM6A",
                     ApplicationName = "SearchBot"
                 });
+                
 
                 var searchListRequest = youtubeService.Search.List("snippet");
                 searchListRequest.Q = activity.Text ?? "cats"; // Replace with your search term.
